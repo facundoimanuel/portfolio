@@ -1,0 +1,112 @@
+html, body {
+  height: 100vh;
+  margin: 0; }
+
+body {
+  background: #161616;
+  font-family: 'VT323', monospace;
+  font-size: 20px; }
+
+.nav {
+  display: flex;
+  justify-content: center; }
+  .nav__about {
+    margin-top: 30px;
+    color: #00ff2b;
+    text-decoration: none; }
+    .nav__about:hover {
+      color: #00ff2b;
+      text-decoration: line-through; }
+
+/* prueva bg
+.bg{
+    position: fixed;
+    z-index: -1;
+    &__vid{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+*/
+/* prueva video
+.contenedor{
+    width: 220px;
+    height: 210px;
+    background: $old-grey;
+    margin: auto;
+    border:2px solid $black;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+
+    animation: video 0s 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+    
+    @keyframes video{
+        100%{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+    .contenido{
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        border: 1px solid $black;
+    }
+    .btn-close{
+        display: flex;
+        justify-content: flex-end;
+    } 
+    .btn-close-video{
+        color: $black;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 1.25rem;
+        &:hover{
+            color: $red;
+        }
+    }
+}
+*/
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px; }
+
+.skull {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  animation: skullRotate 4s linear infinite; }
+
+@keyframes skullRotate {
+  100% {
+    transform: rotateY(360deg); } }
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 170px; }
+  footer p {
+    color: #00ff2b;
+    animation: type 9s steps(24) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #00ff2b; }
+
+@keyframes type {
+  0% {
+    width: 0ch; }
+  50% {
+    width: 24ch; }
+  100% {
+    width: 0ch; } }
