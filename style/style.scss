@@ -31,21 +31,8 @@ body{
 }
 
 
-/*.bg{
-    background: url(/img/pbc.gif);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 
-    &__vid{
-        width: 100vw;
-        height: 100vh;
-        
-    }
-}/*
-
-
-/* prueva video
+/*prueva video
 .contenedor{
     width: 220px;
     height: 210px;
@@ -90,8 +77,8 @@ body{
             color: $red;
         }
     }
-}
-*/
+} */
+
 
 
 
@@ -117,30 +104,3 @@ body{
     }
 }
 
-
-
-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 170px;
-
-    p{
-        color: $greeen;
-        animation: type 9s steps(24) infinite;
-        overflow: hidden;
-        white-space: nowrap;
-        border-right:4px solid $greeen;
-
-        @keyframes type {
-            0%{
-                width: 0ch;
-            }
-            50%{
-                width:24ch;
-            }
-            100%{
-                width:0ch;
-            }
-        }
-    }
-}
