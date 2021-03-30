@@ -10,9 +10,9 @@ $greeen: #00ff2b;
 
 
 body{
-    background: $black ;
     font-family: 'VT323', monospace;
     font-size: 20px;
+    background: $black;
 
 }
 
@@ -31,14 +31,18 @@ body{
 }
 
 
-.bg{
-    position: fixed;
-    z-index: -1;
+/*.bg{
+    background: url(/img/pbc.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
     &__vid{
         width: 100vw;
         height: 100vh;
+        
     }
-}
+}/*
 
 
 /* prueva video
