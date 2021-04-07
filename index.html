@@ -5,45 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style/style.css">
-    <title>|||MYWEB|||</title>
+    <title>facundoimauel.com</title>
 </head>
-<body>
+<body>  
 
-    
-    <!-- prueva-video>  
-      <div class="contenedor">
-        <div class="btn-close">
-          <button class="btn-close-video" id="close">&times;</button>
-        </div>
-        <div class="contenido">
-            <img src="img/pbc.gif" alt="gif" width="200px">
-        </div>
-      </div-->
-      
-    
 
-    <nav class="nav">
-      <a href="#" class="nav__about">about.</a>
-    </nav>
+  <main class="grid-container">
 
-    
-    <div>
-      <a href="#" class="name">
-        <img src="img/designs2.png" alt="name-logo" width="175px" class="name__color">
-      </a>
-      <a href="#" class="skull">
-        <img src="img/designs1.png" alt="skull" width="90px" class="skull__color">
-      </a>
+    <div class="crc">
+      <img src="/img/crc.svg" alt="">
+      <p>//</p>
+      <p id="clock"></p>
     </div>
 
+    <div class="name">
+      <img src="/img/name.svg" alt="logo">
+    </div>
 
-    <script src="js/main.js"></script> 
+    <div class="text">
+      <h1><span>designer</span>,</h1>
+      <h1><span>developer</span>,</h1>
+      <h1><span>multimedia producer</span></h1>  
+    </div>  
 
+    <div class="skull">
+      <img src="/img/skull.svg" alt="skull-wireframe">
+    </div>
+
+  </main>
+
+  <div id="draggable">
+    <span class="close">&times;</span>
+    <img src="/img/AHQD0553.JPG" alt="profile-photo">
+  </div>
+
+  <div id="draggable2">
+    <span class="close">&times;</span>
+    <img src="/img/clouds.gif" alt="profile-photo">
+  </div>
+
+
+
+
+<!--draggable n close divs-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+    } );
+  </script>
+
+  <script>
+   $( function() {
+      $( "#draggable2" ).draggable();
+    } );
+  </script>
+
+
+
+  <script>
+    var closebtns = document.getElementsByClassName("close");
+    var i;
+  
+    for (i = 0; i < closebtns.length; i++) {
+      closebtns[i].addEventListener("click", function() {
+        this.parentElement.style.display = 'none';
+      });
+    }
+  </script>
+
+
+<!--woldwime-->
+  <script type="text/javascript">
+    var clockElement = document.getElementById('clock');
+
+    function clock() {
+        clockElement.textContent = new Date().toString();
+    }
+
+    setInterval(clock, 1000);
+  </script>
 </body>
 </html>
