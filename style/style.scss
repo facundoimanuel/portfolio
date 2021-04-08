@@ -305,11 +305,31 @@ body{
     }
 
 
+/*
+    .designs{
+        grid-column: 1 / -1;
+        padding: 200px 30px;
+
+        display: flex;
+        justify-content: space-evenly;
+
+        img{
+            width: 600px;
+            filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.100));
+        }
+
+    }
+*/
+
+
+
+
 
 
 
     .skull{
         grid-column: 1 / -1;
+
 
         display: flex;
         justify-content: center;
