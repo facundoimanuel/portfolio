@@ -4,10 +4,6 @@ $grey: #cacaca;
 $red: #ff4639;
 
 @font-face{
-
-    font-family: "cinema-bold";
-    src: url(../fonts/Cinematografica-Thin-trial.ttf);
-
     font-family: "octuple";
     src: url(../fonts/Octuple-max-demo.ttf);
 }
@@ -30,7 +26,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     */
-    background: $grey;
+    background: $grey
 
 }
 
@@ -53,18 +49,28 @@ body{
         grid-row: auto;
         grid-column: 1 / -1;
     }
+    .skull{
+        grid-column: span 2;
+    }
 }
 
 @media only screen and (max-width: 1030px){
     h1{
         font-size: 70px !important;
     }
-    span{
-        font-size: 70px;
-    }
 }
 
 @media only screen and (max-width: 940px){
+
+    #draggable2{
+        width: 200px !important;
+        height: auto !important;
+        left: 500px !important;
+        img{
+            width: 150px !important;
+            
+        }
+    }
 
     .skull img{
         width: 150px !important;
@@ -72,12 +78,7 @@ body{
 }
 
 @media only screen and (max-width: 780px){
-    #draggable{
-        display: none;
-    }
-    #draggable2{
-        display: none;
-    }
+
 
     .name img{
         width: 200px !important;
@@ -86,8 +87,22 @@ body{
     h1{
         font-size: 60px !important;
     }
-    span{
-        font-size: 60px;
+
+    #draggable{
+        width: auto !important;
+        left: 50px;
+        img{
+            width: 150px !important;
+        }
+    }
+    #draggable2{
+        width: 200px !important;
+        height: auto !important;
+        left: 100px !important;
+        img{
+            width: 150px !important;
+            
+        }
     }
 
 }
@@ -111,9 +126,6 @@ body{
     h1{
         font-size: 40px !important;
     }
-    span{
-        font-size: 40px;
-    }
 
 
     .skull img{
@@ -122,14 +134,28 @@ body{
 
 }
 @media only screen and (max-width: 520px){
+    #draggable{
+        width: 150px !important;
+        height: auto !important;
+        left: 50px !important;
+        img{
+            width: 100px !important;
+            
+        }
+    }
+    #draggable2{
+        width: 170px !important;
+        height: auto !important;
+        left: 120px !important;
+        img{
+            width: 120px !important;
+            
+        }
+    }
     .text{
-        padding: 10px !important;
-
         h1{
             font-size: 30px !important;
-        }
-        span{
-            font-size: 30px;
+            text-align: start !important;
         }
     }
 }
@@ -147,12 +173,7 @@ body{
         width: 100px !important;
         margin: 10px;
     }
-
-    .text h1{
-        text-align: start !important;
-    }
     .skull{
-        padding: 20px !important;
         img{
             width: 100px !important;
         }
@@ -231,7 +252,8 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns: auto auto;
+
     justify-content: center;
     align-content: center;
     margin: 20px;
@@ -273,8 +295,7 @@ body{
 
 
     .name{
-        grid-row: span 2;
-
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -289,13 +310,13 @@ body{
 
     .text{
         justify-content: center;
-        padding: 50px;
+        padding: 25px;
 
         h1{      
             text-align: end;
             color: $black;
-            font-family:'octuple';
-            font-size: 100px;
+            font-family:'octuple'; 
+            font-size: 100px; 
         }
 
         span:hover {
@@ -328,12 +349,10 @@ body{
 
 
     .skull{
-        grid-column: 1 / -1;
-
-
+        grid-column: span 2;
         display: flex;
         justify-content: center;
-        padding: 50px;
+        padding: 20px;
 
         img{
             width: 200px;

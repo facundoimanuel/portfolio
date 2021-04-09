@@ -1,6 +1,4 @@
 @font-face {
-  font-family: "cinema-bold";
-  src: url(../fonts/Cinematografica-Thin-trial.ttf);
   font-family: "octuple";
   src: url(../fonts/Octuple-max-demo.ttf); }
 
@@ -32,29 +30,40 @@ body {
       margin: 20px 0; }
   .text {
     grid-row: auto;
-    grid-column: 1 / -1; } }
+    grid-column: 1 / -1; }
+  .skull {
+    grid-column: span 2; } }
 
 @media only screen and (max-width: 1030px) {
   h1 {
-    font-size: 70px !important; }
-  span {
-    font-size: 70px; } }
+    font-size: 70px !important; } }
 
 @media only screen and (max-width: 940px) {
+  #draggable2 {
+    width: 200px !important;
+    height: auto !important;
+    left: 500px !important; }
+    #draggable2 img {
+      width: 150px !important; }
   .skull img {
     width: 150px !important; } }
 
 @media only screen and (max-width: 780px) {
-  #draggable {
-    display: none; }
-  #draggable2 {
-    display: none; }
   .name img {
     width: 200px !important; }
   h1 {
     font-size: 60px !important; }
-  span {
-    font-size: 60px; } }
+  #draggable {
+    width: auto !important;
+    left: 50px; }
+    #draggable img {
+      width: 150px !important; }
+  #draggable2 {
+    width: 200px !important;
+    height: auto !important;
+    left: 100px !important; }
+    #draggable2 img {
+      width: 150px !important; } }
 
 @media only screen and (max-width: 640px) {
   .crc img {
@@ -65,18 +74,25 @@ body {
     width: 150px !important; }
   h1 {
     font-size: 40px !important; }
-  span {
-    font-size: 40px; }
   .skull img {
     width: 120px !important; } }
 
 @media only screen and (max-width: 520px) {
-  .text {
-    padding: 10px !important; }
-    .text h1 {
-      font-size: 30px !important; }
-    .text span {
-      font-size: 30px; } }
+  #draggable {
+    width: 150px !important;
+    height: auto !important;
+    left: 50px !important; }
+    #draggable img {
+      width: 100px !important; }
+  #draggable2 {
+    width: 170px !important;
+    height: auto !important;
+    left: 120px !important; }
+    #draggable2 img {
+      width: 120px !important; }
+  .text h1 {
+    font-size: 30px !important;
+    text-align: start !important; } }
 
 @media only screen and (max-width: 390px) {
   .grid-container {
@@ -87,12 +103,8 @@ body {
   .name img {
     width: 100px !important;
     margin: 10px; }
-  .text h1 {
-    text-align: start !important; }
-  .skull {
-    padding: 20px !important; }
-    .skull img {
-      width: 100px !important; } }
+  .skull img {
+    width: 100px !important; } }
 
 #draggable {
   width: 250px;
@@ -138,7 +150,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 350px auto;
+  grid-template-columns: auto auto;
   justify-content: center;
   align-content: center;
   margin: 20px;
@@ -179,7 +191,7 @@ body {
       font-family: 'Syne Mono', monospace;
       font-weight: bolder; }
   .grid-container .name {
-    grid-row: span 2;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -187,7 +199,7 @@ body {
       width: 250px; }
   .grid-container .text {
     justify-content: center;
-    padding: 50px; }
+    padding: 25px; }
     .grid-container .text h1 {
       text-align: end;
       color: #161616;
@@ -197,9 +209,9 @@ body {
       cursor: pointer;
       color: #ff4639; }
   .grid-container .skull {
-    grid-column: 1 / -1;
+    grid-column: span 2;
     display: flex;
     justify-content: center;
-    padding: 50px; }
+    padding: 20px; }
     .grid-container .skull img {
       width: 200px; }
